@@ -50,6 +50,18 @@ html {
   text-decoration: underline;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand .logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Page Section Styling */
 section {
   max-width: 900px;
