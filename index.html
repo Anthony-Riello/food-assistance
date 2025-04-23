@@ -1,43 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Assistance</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
-            color: #555;
-            max-width: 600px;
-            text-align: center;
-        }
-        a {
-            margin-top: 20px;
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            background-color: #007bff;
-            padding: 10px 20px;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Assistance</title>
+  <style>
+    :root {
+      --green: #34c759; /* iOS System Green */
+      --green-dark: #28a745;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --bg: #f5f5f5;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--green);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar h1 {
+      color: white;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    a.repo-link {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: var(--green);
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    a.repo-link:hover {
+      background-color: var(--green-dark);
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Food Assistance</h1>
-    <p>This is the GitHub Pages site for our project. We'll use this space to share updates, documentation, and demos as we build.</p>
-    <a href="https://github.com/anthonyriello/food-assistance" target="_blank">View the Repository</a>
+
+  <div class="navbar">
+    <h1>Food Assistance</h1>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#docs">Documentation</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <section id="home">
+    <h2>Welcome to Food Assistance</h2>
+    <p>This platform helps connect low-income individuals with affordable food from local businesses, especially during late hours when surplus food is available.</p>
+    <a class="repo-link" href="https://github.com/anthonyriello/food-assistance" target="_blank">View GitHub Repository</a>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p>- Real-time food availability updates<br>- Business sign-up and donation system<br>- Map integration for local pickup<br>- Late-night alerts and filters</p>
+  </section>
+
+  <section id="docs">
+    <h2>Documentation</h2>
+    <p>Here you’ll find API details, system architecture, and setup instructions. Coming soon!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have questions, feedback, or want to collaborate? Reach out to us via GitHub or email at <strong>foodassistance@projectmail.com</strong>.</p>
+  </section>
+
 </body>
 </html>
+
