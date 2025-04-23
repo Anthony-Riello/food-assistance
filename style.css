@@ -62,7 +62,7 @@ html {
   object-fit: contain;
   background-color: white;   /* adds contrast */
   border-radius: 12px;       /* soft corners */
-  padding: 6px;              /* spacing inside */
+  padding: 4px;              /* spacing inside */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* soft shadow to make it pop */
 }
 
