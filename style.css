@@ -126,17 +126,20 @@ section img {
 .image-row {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap; /* For Mobile */
+  flex-wrap: wrap;
   margin: 2rem 0;
 }
 
 .image-row img {
-  max-width: 100%;
-  width: 45%;
+  max-width: 350px; /* adjust this to your desired size */
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
+
 
 /* Footer */
 .footer {
