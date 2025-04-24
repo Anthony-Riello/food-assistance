@@ -172,7 +172,7 @@ section img {
 .footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   background-color: var(--green);
   color: white;
   text-align: center;
