@@ -227,7 +227,13 @@ strong {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto; /* push it to the right */
   }
 
   .nav-links {
@@ -251,8 +257,15 @@ strong {
   }
 
   .navbar {
-    flex-wrap: wrap;
-    position: relative;
+  background-color: var(--green);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
   }
 }
 
