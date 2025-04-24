@@ -123,21 +123,31 @@ section img {
   color: var(--text-light);
 }
 
-.image-row {
+.design-concept {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
 
-.image-row img {
-  max-width: 300px;  /* same size for both */
-  width: 100%;
+.design-concept .device {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
+
+.device.mobile {
+  max-height: 500px;
+  width: auto;
+}
+
+.device.desktop {
+  max-height: 500px;
+  width: auto;
+}
+
 
 .storyboard-row {
   display: flex;
