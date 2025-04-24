@@ -108,6 +108,30 @@ ul {
   list-style-type: disc;
 }
 
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--green);
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.footer a {
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
 /* Buttons and Links */
 a.repo-link {
   margin-top: 20px;
