@@ -150,17 +150,17 @@ section img {
 
 
 .storyboard-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 2rem;
   margin-top: 1.5rem;
 }
 
 .storyboard-row img {
-  max-width: 300px;
-  width: 100%;
+  max-height: 300px; 
   height: auto;
+  width: auto;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
