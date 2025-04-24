@@ -9,20 +9,25 @@
 </head>
 <body>
   <div class="navbar">
-    <div class="brand">
-      <img src="images/logo.png" alt="Food Assistance Logo" class="logo">
-      <h1>Food Assistance</h1>
-    </div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="project-overview.html">Project Overview</a>
-      <a href="design-process.html">Design Process</a>
-      <a href="prototyping.html">Prototyping</a>
-      <a href="heuristic-evaluation.html">Heuristic Evaluation</a>
-      <a href="final-design.html">Final Design</a>
-      <a href="reflections.html">Reflections</a>
-    </div>
+  <div class="brand">
+    <img src="images/logo.png" alt="Food Assistance Logo" class="logo">
+    <h1>Food Assistance</h1>
   </div>
+
+  <!-- Hamburger button for mobile -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <!-- Navigation links -->
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="project-overview.html">Project Overview</a>
+    <a href="design-process.html">Design Process</a>
+    <a href="prototyping.html">Prototyping</a>
+    <a href="heuristic-evaluation.html">Heuristic Evaluation</a>
+    <a href="final-design.html">Final Design</a>
+    <a href="reflections.html">Reflections</a>
+  </div>
+</div>
 
   <section>
     <h2>Project Overview</h2>
@@ -35,5 +40,22 @@
     <a href="https://github.com/Anthony-Riello/food-assistance" target="_blank">GitHub</a>
   </p>
 </footer>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('show');
+  }
+
+  // Auto-close mobile menu when a link is clicked
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const nav = document.getElementById('navLinks');
+        nav.classList.remove('show');
+      });
+    });
+  });
+</script>
 </body>
 </html>
