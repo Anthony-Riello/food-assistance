@@ -126,18 +126,33 @@ section img {
 .image-row {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 .image-row img {
-  max-width: 350px; /* adjust this to your desired size */
+  max-width: 300px;  /* same size for both */
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.storyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.storyboard-row img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
 
