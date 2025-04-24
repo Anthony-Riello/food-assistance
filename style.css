@@ -123,6 +123,20 @@ section img {
   color: var(--text-light);
 }
 
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* For Mobile */
+  margin: 2rem 0;
+}
+
+.image-row img {
+  max-width: 100%;
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
 
 /* Footer */
 .footer {
