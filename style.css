@@ -108,6 +108,13 @@ ul {
   list-style-type: disc;
 }
 
+section img {
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
 /* Footer */
 .footer {
   position: fixed;
